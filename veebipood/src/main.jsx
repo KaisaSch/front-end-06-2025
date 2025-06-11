@@ -22,4 +22,5 @@ createRoot(document.getElementById('root')).render(
 
 // 1. 03.06 - React algus, pages, navigeerimine
 // 2. 05.06 - useState, useRef
-// 3. 10.06 - veebimajutus: Firebase .web.app
+// 3. 10.06 - dünaamiline CSS, componendi väljatõste.
+//            veebimajutus: Firebase .web.app

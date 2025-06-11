@@ -19,3 +19,19 @@
 .pilt:active {
   transform: scale(90%)
 }
+
+.summa-aktiivne {
+  color: rgb(227 6 140);
+  border-color: rgb(227 6 140) !important;
+  background-color: rgb(242, 241, 241);
+}
+
+.linn-aktiivne {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(227 6 140);
+}
+
+.keel-aktiivne {
+  font-size: 1.05em;
+}

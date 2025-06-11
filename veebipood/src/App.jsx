@@ -1,5 +1,5 @@
 import './App.css'
-import { Link, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import Avaleht from './pages/Avaleht'
 import Ostukorvi from './pages/Ostukorvi'
 import LisaToode from './pages/LisaToode'
@@ -7,35 +7,15 @@ import Esindused from './pages/Esindused'
 import Kinkekaart from './pages/Kinkekaart'
 import Seaded from './pages/Seaded'
 import NotFound from './pages/NotFound'
+import Menu from './components/Menu'
+import Kalkulaator from './pages/Kalkulaator'
 
 
 function App() {
 
   return (
     <>
-      <Link to="/">
-        <img className="pilt" src="https://images.squarespace-cdn.com/content/v1/607f89e638219e13eee71b1e/1684821560422-SD5V37BAG28BURTLIXUQ/michael-sum-LEpfefQf4rU-unsplash.jpg" alt="" />
-      </Link>
-
-      <Link to="/ostukorv">
-        <button>Ostukorvi</button>
-      </Link>
-
-      <Link to="/lisa-toode">
-        <button>Lisa toode</button>
-      </Link>
-
-       <Link to="/esindused">
-        <button>Esindused</button>
-      </Link>
-
-      <Link to="/osta-kinkekaart">
-        <button>Kinkekaardid</button>
-      </Link>
-
-       <Link to="/seaded">
-        <button>Seadetes</button>
-      </Link>
+      <Menu />
 
     {/* path --> mis järgneb baasURL-le. localhost: 5173 */}
       <Routes>
@@ -45,6 +25,7 @@ function App() {
         <Route path='/esindused' element={<Esindused />} />
         <Route path='/osta-kinkekaart' element={<Kinkekaart />} />
         <Route path='/seaded' element={<Seaded />} />
+        <Route path='/kalkulaator' element={<Kalkulaator />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
     </>
