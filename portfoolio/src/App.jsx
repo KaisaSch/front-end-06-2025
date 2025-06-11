@@ -24,10 +24,17 @@ function App() {
           <p>Kursuste leht</p>
         </Link>
       </div>
+
+      <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/pAUcNKSCLUg?si=Sl_YeIvhcVfGXL8t"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+
       <Routes>
-        <Route path="work" element={ <div>Work</div> }/>
-        <Route path="hobbies" element={ <div>Hobbies</div> }/>
-        <Route path="courses" element={ <div>Courses</div> }/>
+        <Route path="work" element={ < Work /> }/>
+        <Route path="hobbies" element={ < Hobbies /> }/>
+        <Route path="courses" element={ < Courses /> }/>
       </Routes>
     </div>
   )

@@ -10,22 +10,22 @@ function App() {
   return (
     <>
       <Link to="/">
-      <button>Avaleht</button>
+        <button>Avaleht</button>
       </Link>
       <Link to="/uudised">
-      <button>Uudised</button>
+        <button>Uudised</button>
       </Link>
       <Link to="/kontakt">
-      <button>Kontakt</button>
+        <button>Kontakt</button>
       </Link>
       <Link to="/meist">
-      <button>Meist</button>
+        <button>Meist</button>
       </Link>
       <Routes>
-        <Route path='' element={ <div>Avaleht</div>}/>
-        <Route path='uudised' element={ <div>Uudised</div>}/>
-        <Route path='kontakt' element={ <div>Kontakt</div>}/>
-        <Route path='meist' element={ <div>Meist</div>}/>
+        <Route path='' element={ <Avaleht /> }/>
+        <Route path='uudised' element={ <Uudised /> }/>
+        <Route path='kontakt' element={ <Kontakt /> }/>
+        <Route path='meist' element={ <Meist /> }/>
       </Routes>
     </>
   )
