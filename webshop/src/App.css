@@ -1,0 +1,18 @@
+.ikoon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.ikoon:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.ikoon:active {
+  padding: 1px;
+}
+
+.center-align {
+  text-align: center;
+}
